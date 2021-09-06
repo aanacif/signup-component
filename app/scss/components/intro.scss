@@ -50,7 +50,7 @@
       text-align: center;
       padding: 1rem;
       border-radius: 10px;
-      margin: 2rem;
+      margin: 1rem auto;
       border: none;
       box-shadow: 0 8px 1px rgba(0, 0, 0, 0.144);
       @include breakpoint-down(small) {
@@ -146,7 +146,7 @@
       text-align: center;
       color: var(--grayishblue);
       font-size: 0.7rem;
-      span {
+      span > a {
         color: var(--red);
       }
       @include breakpoint-down(small) {
