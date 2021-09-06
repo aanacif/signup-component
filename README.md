@@ -54,6 +54,9 @@ for (let coffee = 1; project != done; coffee++) {
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Grid
+- CSS Flexbox
+- Form Validations
+- Javascript
 
 ### What I learned
 
