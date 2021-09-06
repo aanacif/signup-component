@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/aanacif/signup-component)
-- Live Site URL: [Add live site URL here](https://aanacif.github.io/signup-component/)
+- Solution URL: [https://github.com/aanacif/signup-component](https://github.com/aanacif/signup-component)
+- Live Site URL: [https://aanacif.github.io/signup-component/](https://aanacif.github.io/signup-component/)
 
 ## My process
 
@@ -64,8 +64,8 @@ Grid is starting to make sense, need more practice tho :)
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/aanacif)
-- Twitter - [@yourusername](https://www.twitter.com/aanacif)
+- Frontend Mentor - [@aanacif](https://www.frontendmentor.io/profile/aanacif)
+- Twitter - [@aanacif](https://www.twitter.com/aanacif)
 
 ## Acknowledgments
 
