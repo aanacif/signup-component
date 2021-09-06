@@ -60,7 +60,7 @@ for (let coffee = 1; project != done; coffee++) {
 
 ### What I learned
 
-Not a fan of the form "stretching" aspect on invalid inputs. Not a deal breaker tho :)
+Grid is starting to make sense, need more practice tho :)
 
 ## Author
 

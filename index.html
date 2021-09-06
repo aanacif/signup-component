@@ -9,7 +9,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./dist/style.css" />
-	<script defer src="./dist/script.js"></script>
 	<title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 
@@ -20,12 +19,9 @@
 		<section class="intro">
 
 			<article class="intro-headline">
-
 				<h1>Learn to code by watching others</h1>
-
 				<h6>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
 					but understanding how developers think is invaluable.</h6>
-
 			</article>
 
 			<article class="intro-form">
@@ -36,33 +32,37 @@
 
 				<form onsubmit="validateForm(event)">
 
-					<!-- oninvalid="this.setCustomValidity('Enter User Name Here')"
-  oninput="this.setCustomValidity('')"/> -->
+					<div class="fn">
+						<input type="text" name="firstname" id="firstname" placeholder="First Name" required
+							oninvalid="invalid(event)" oninput="valid(event)">
+						<label for="firstname" id="firstname-label" hidden>First Name cannot be empty</label>
+						<img src="./app/images/icon-error.svg" alt="invalid-firstname" id="firstname-icon" hidden>
+					</div>
 
-					<input type="text" name="firstname" id="firstname" placeholder="First Name" required
-						oninvalid="invalid(event)" oninput="valid(event)">
-					<label for="firstname" id="firstname-label" hidden>First Name cannot be empty</label>
-					<img src="./app/images/icon-error.svg" alt="invalid-firstname" id="firstname-icon" hidden>
+					<div class="ln">
+						<input type="text" name="lastname" id="lastname" placeholder="Last Name" required oninvalid="invalid(event)"
+							oninput="valid(event)">
+						<label for="lastname" id="lastname-label" hidden>Last Name cannot be empty</label>
+						<img src="./app/images/icon-error.svg" alt="invalid-lastname" id="lastname-icon" hidden>
+					</div>
 
-					<input type="text" name="lastname" id="lastname" placeholder="Last Name" required oninvalid="invalid(event)"
-						oninput="valid(event)">
-					<label for="lastname" id="lastname-label" hidden>Last Name cannot be empty</label>
-					<img src="./app/images/icon-error.svg" alt="invalid-lastname" id="lastname-icon" hidden>
+					<div class="em">
+						<input type="email" name="email" id="email" placeholder="Email Address" required oninvalid="invalid(event)"
+							oninput="valid(event)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+						<label for="email" id="email-label" hidden>Looks like this is not an email</label>
+						<img src="./app/images/icon-error.svg" alt="invalid-email" id="email-icon" hidden>
+					</div>
 
-					<input type="email" name="email" id="email" placeholder="Email Address" required oninvalid="invalid(event)"
-						oninput="valid(event)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-					<label for="email" id="email-label" hidden>Looks like this is not an email</label>
-					<img src="./app/images/icon-error.svg" alt="invalid-email" id="email-icon" hidden>
-
-					<input type="password" name="password" id="password" placeholder="Password" required
-						oninvalid="invalid(event)" oninput="valid(event)">
-					<label for="password" id="password-label" hidden>Password cannot be empty</label>
-					<img src="./app/images/icon-error.svg" alt="invalid-password" id="password-icon" hidden>
+					<div class="pw">
+						<input type="password" name="password" id="password" placeholder="Password" required
+							oninvalid="invalid(event)" oninput="valid(event)">
+						<label for="password" id="password-label" hidden>Password cannot be empty</label>
+						<img src="./app/images/icon-error.svg" alt="invalid-password" id="password-icon" hidden>
+					</div>
 
 					<button type="submit">Claim your free trial</button>
 
 					<p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-
 
 				</form>
 
@@ -81,6 +81,7 @@
 		</div>
 	</footer>
 
+	<script src="./dist/script.js"></script>
 
 </body>
 

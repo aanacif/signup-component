@@ -1,13 +1,13 @@
 @use 'util' as *;
 .intro {
   display: grid;
-  grid-template-columns: repeat(2, 600px);
+  grid-template-columns: repeat(2, 542px);
   gap: 0.1rem;
   @include breakpoint-down(medium) {
-    grid-template-columns: 600px;
+    grid-template-columns: 542px;
   }
   @include breakpoint-down(small) {
-    grid-template-columns: 375px;
+    grid-template-columns: 340px;
   }
 
   &-headline {
@@ -58,53 +58,69 @@
       }
     }
     form {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 1rem;
       background-color: var(--white);
-      padding: 2rem 0;
+      height: 500px;
       border-radius: 10px;
       box-shadow: 0 8px 1px rgba(0, 0, 0, 0.144);
-      margin: 0 2rem;
-    }
-    input {
-      display: block;
-      width: 90%;
-      padding: 1rem 2rem;
-      margin: 1rem auto;
-      border-radius: 5px;
-      border: 1px solid var(--grayishblue);
-      font-family: var(--font-body);
-      font-weight: 600;
-      font-size: 0.9rem;
-      &:focus {
-        outline: 1px solid var(--darkblue);
-        border: none;
+      input {
+        display: block;
+        width: 90%;
+        padding: 1rem 2rem;
+        margin: 1rem auto;
+        border-radius: 5px;
+        border: 1px solid var(--grayishblue);
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 0.9rem;
+        @include breakpoint-down(small) {
+          padding: 1rem;
+        }
+        &:focus {
+          outline: 1px solid var(--darkblue);
+          border: none;
+        }
+        &.error {
+          border: 2px solid var(--red);
+          color: var(--red);
+          outline: none;
+        }
       }
-      &.error {
-        border: 2px solid var(--red);
+      label {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        font-style: italic;
         color: var(--red);
-        outline: none;
+        font-size: 0.7rem;
+        top: 74px;
+        left: 322px;
+        @include breakpoint-down(small) {
+          left: 130px;
+        }
+      }
+      img {
+        position: absolute;
+        top: 35px;
+        left: 440px;
+        @include breakpoint-down(small) {
+          left: 255px;
+        }
       }
     }
-    label {
-      margin: 0;
-      padding: 0;
+    .fn {
       position: relative;
-      left: 346px;
-      top: -25px;
-      font-style: italic;
-      color: var(--red);
-      font-size: 0.7rem;
-      @include breakpoint-down(medium) {
-        top: -25px;
-      }
-      @include breakpoint-down(small) {
-        top: -25px;
-        left: 130px;
-      }
     }
-    img {
+    .ln {
       position: relative;
-      top: -53px;
-      left: 300px;
+    }
+    .em {
+      position: relative;
+    }
+    .pw {
+      position: relative;
     }
     button {
       display: block;
@@ -126,6 +142,7 @@
       }
     }
     p {
+      margin: 0;
       text-align: center;
       color: var(--grayishblue);
       font-size: 0.7rem;
