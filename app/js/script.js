@@ -1,24 +1,7 @@
-//const firstName = document.querySelector('label[for="firstname"]')
-// const firstNameLabel = document.querySelector('#firstname-label')
-// const firstNameInput = document.querySelector('#firstname')
-
-// const lastNameLabel = document.querySelector('#lastname-label')
-// const lastNameInput = document.querySelector('#lastname')
-
-// const emailLabel = document.querySelector('#email-label')
-// const emailInput = document.querySelector('#email')
-
-// const passwordLabel = document.querySelector('#password-label')
-// const passwordInput = document.querySelector('#password')
-
 const validateForm = (e) => {
   e.preventDefault()
-  console.log('validating')
-
+  console.log('Backend Validating form')
 }
-
-
-//firstNameInput.oninvalid = invalid
 
 function invalid(event) {
   event.preventDefault()
@@ -32,7 +15,6 @@ function invalid(event) {
   currentIcon.removeAttribute('hidden')
 
   event.currentTarget.classList.add('error')
-
 }
 
 function valid(event) {
@@ -47,6 +29,5 @@ function valid(event) {
   currentIcon.setAttribute('hidden', '')
 
   event.currentTarget.classList.remove('error')
-
 }
 
