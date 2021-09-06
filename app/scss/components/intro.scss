@@ -1,0 +1,113 @@
+.intro {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  gap: 2rem;
+
+  &-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //    border: 1px solid black;
+    color: var(--white);
+
+    h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      margin: 0;
+      margin-top: 14rem;
+      margin-left: 4rem;
+      padding: 0;
+    }
+    h6 {
+      font-weight: 400;
+      font-size: 1rem;
+      margin: 0;
+      margin-top: 2rem;
+      margin-left: 4rem;
+
+      padding: 0;
+    }
+  }
+  &-form {
+    //border: 1px solid black;
+    .free-trial {
+      background-color: var(--blue);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+      border-radius: 5px;
+      margin: 2rem;
+      border: none;
+      box-shadow: 0 10px 10px var(--darkblue);
+    }
+    form {
+      background-color: var(--white);
+      padding: 2rem 0;
+      border-radius: 5px;
+      box-shadow: 0 10px 10px var(--darkblue);
+      margin: 0 2rem;
+    }
+    input {
+      display: block;
+      width: 90%;
+      padding: 1rem 2rem;
+      margin: 1rem auto;
+      border-radius: 5px;
+      border: 1px solid var(--grayishblue);
+      font-weight: 600;
+      font-size: 1rem;
+      &:focus {
+        outline: 1px solid var(--darkblue);
+        border: none;
+      }
+      &.error {
+        border: 2px solid var(--red);
+        color: var(--red);
+        outline: none;
+      }
+    }
+    label {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      left: 346px;
+      top: -12px;
+      font-style: italic;
+      color: var(--red);
+      font-size: 0.7rem;
+    }
+    img {
+      position: relative;
+      top: -53px;
+      left: 300px;
+    }
+    button {
+      display: block;
+      width: 90%;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+      background-color: var(--green);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+      border-radius: 5px;
+      margin: 1rem auto;
+      border: none;
+      margin-bottom: 0;
+      box-shadow: 0 5px 5px var(--green);
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    p {
+      text-align: center;
+      color: var(--grayishblue);
+      font-size: 0.7rem;
+      span {
+        color: var(--red);
+      }
+    }
+  }
+}
