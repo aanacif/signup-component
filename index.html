@@ -50,7 +50,7 @@
 					<img src="./app/images/icon-error.svg" alt="invalid-lastname" id="lastname-icon" hidden>
 
 					<input type="email" name="email" id="email" placeholder="Email Address" required oninvalid="invalid(event)"
-						oninput="valid(event)">
+						oninput="valid(event)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
 					<label for="email" id="email-label" hidden>Looks like this is not an email</label>
 					<img src="./app/images/icon-error.svg" alt="invalid-email" id="email-icon" hidden>
 
@@ -73,10 +73,12 @@
 	</main>
 
 	<footer>
-		<p class="attribution">
-			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-			Coded by <a href="#">Your Name Here</a>.
-		</p>
+		<div class="attribution">
+			<p>
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+				Coded by <a href="https://github.com/aanacif" target="_blank">aanacif</a>.
+			</p>
+		</div>
 	</footer>
 
 

@@ -1,10 +1,12 @@
 @use '../util' as *;
 
 .container {
-  max-width: rem(1440);
-  height: 100vh;
   display: grid;
+  align-content: center;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: rem(1440);
+  margin: auto;
 }

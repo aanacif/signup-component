@@ -57,7 +57,7 @@ for (let coffee = 1; project != done; coffee++) {
 
 ### What I learned
 
-Trying my best ot match to the design.
+Not a fan of the form "stretching" aspect on invalid inputs. Not a deal breaker tho :)
 
 ## Author
 

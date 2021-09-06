@@ -22,6 +22,7 @@ const validateForm = (e) => {
 
 function invalid(event) {
   event.preventDefault()
+
   let labelGrab = `#${event.currentTarget.labels[0].id}`
   let currentLabel = document.querySelector(labelGrab)
   currentLabel.removeAttribute('hidden');
@@ -30,12 +31,13 @@ function invalid(event) {
   let currentIcon = document.querySelector(`${iconGrab}-icon`)
   currentIcon.removeAttribute('hidden')
 
-  event.currentTarget.classList.toggle('error')
+  event.currentTarget.classList.add('error')
 
 }
 
 function valid(event) {
   event.preventDefault()
+
   let labelGrab = `#${event.currentTarget.labels[0].id}`
   let currentLabel = document.querySelector(labelGrab)
   currentLabel.setAttribute('hidden', '');
@@ -43,6 +45,7 @@ function valid(event) {
   let iconGrab = `#${event.currentTarget.id}`
   let currentIcon = document.querySelector(`${iconGrab}-icon`)
   currentIcon.setAttribute('hidden', '')
+
   event.currentTarget.classList.remove('error')
 
 }
