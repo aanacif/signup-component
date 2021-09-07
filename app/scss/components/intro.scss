@@ -57,6 +57,23 @@
         padding: 1rem 4rem;
       }
     }
+    .success {
+      position: relative;
+      top: -2px;
+      left: 172px;
+      color: green;
+      font-size: 1rem;
+      font-weight: 200;
+      @include breakpoint-down(medium) {
+        top: -2px;
+        left: 172px;
+      }
+      @include breakpoint-down(small) {
+        font-size: 0.9rem;
+        top: -2px;
+        left: 79px;
+      }
+    }
     form {
       display: flex;
       flex-direction: column;

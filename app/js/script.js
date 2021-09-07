@@ -1,8 +1,9 @@
+const formSent = document.querySelector('.success')
 const validateForm = (e) => {
   e.preventDefault()
-  console.log('Backend Validating form')
+  document.getElementById('login-form').reset();
+  formSent.insertAdjacentHTML("afterbegin", 'Form sent, Congrats!')
 }
-
 function invalid(event) {
   event.preventDefault()
 
@@ -16,9 +17,9 @@ function invalid(event) {
 
   event.currentTarget.classList.add('error')
 }
-
 function valid(event) {
   event.preventDefault()
+  if (formSent.innerHTML) formSent.innerHTML = ''
 
   let labelGrab = `#${event.currentTarget.labels[0].id}`
   let currentLabel = document.querySelector(labelGrab)
